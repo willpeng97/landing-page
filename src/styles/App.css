@@ -5,3 +5,35 @@
 button {
     caret-color: rgba(0, 0, 0, 0)
 }
+
+@layer utilities {
+    @keyframes fadeInRight {
+        0% {
+        transform: translateX(1%);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+
+    .animate-fadeInRight {
+        animation: fadeInRight 1s ease-out forwards;
+    }
+
+    @keyframes fadeInBottom {
+        0% {
+        transform: translateY(10%);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+
+    .animate-fadeInBottom {
+        animation: fadeInBottom 1s ease-out forwards;
+    }
+}

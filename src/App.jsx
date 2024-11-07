@@ -17,11 +17,11 @@ function App() {
     {/* Background Dashboard Image */}
     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2/3 h-4/5">
         <div className="relative w-full h-full transform perspective-1000 rotate-y-6 rotate-x-6">
-        <img
-            src="./background.png"
-            alt="Dashboard Preview"
-            className="w-full h-full object-cover rounded-lg shadow-2xl"
-        />
+            <img
+                src="./background.png"
+                alt="Dashboard Preview"
+                className="w-full h-full object-cover rounded-lg shadow-2xl animate-fadeInRight"
+            />
         </div>
     </div>
 
@@ -29,16 +29,16 @@ function App() {
     <main className="relative z-10 h-screen flex items-center">
         <div className="container mx-auto px-4">
         <div className="max-w-2xl text-white space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            INDUSTRY 4.0, MES, AIOT, ESG
+            <h1 className="text-4xl md:text-5xl font-bold leading-tigh">
+                INDUSTRY 4.0, MES, AIOT, ESG
             </h1>
             <p className="text-lg text-blue-100">
-            MES, AIOT, EMS, ESG, BI Dashboard, Traceability,<br />
-            OEE, Performance, Quality, Reporting, Mobility
+                MES, AIOT, EMS, ESG, BI Dashboard, Traceability,<br />
+                OEE, Performance, Quality, Reporting, Mobility
             </p>
             
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 pt-8">
+            <div className="flex flex-wrap gap-4 pt-8 animate-fadeInBottom">
                 <Button text="了解更多" link="https://www.weyutech.com/" />
                 <Button text="DEMO網站" link="https://cloud.weyutech.com/DCMATE_MEMS/template/list/list.html" />
                 <Button text="聯絡資訊" link="" />
