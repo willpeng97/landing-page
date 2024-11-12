@@ -46,6 +46,7 @@ const Button = ({ text, link ,type}) => {
           localStorage.setItem('DCMATE-MEMS_BI_TokenKey', result.TokenKey);
           // 儲存 Refresh_tokenkey *只存這一次
           localStorage.setItem('DCMATE-MEMS_BI_Refresh_TokenKey', result.Refresh_TokenKey);
+          localStorage.setItem('DCMATE-MEMS_BI_Fuctionkey', []);
       }
       else{
         alert('Account or password input failed.')
