@@ -39,14 +39,14 @@ const Button = ({ text, link ,type}) => {
 
       if(result.result){
           // 儲存 帳號
-          localStorage.setItem('DCMATE-MEMS_BI_accountNo', "GUEST");
+          localStorage.setItem('WeyuBI_BI_accountNo', "GUEST");
           // 儲存 用戶名
-          localStorage.setItem('DCMATE-MEMS_BI_userName', result.User_Name);
+          localStorage.setItem('WeyuBI_BI_userName', result.User_Name);
           // 儲存 第一次的 TokenKey
-          localStorage.setItem('DCMATE-MEMS_BI_TokenKey', result.TokenKey);
+          localStorage.setItem('WeyuBI_BI_TokenKey', result.TokenKey);
           // 儲存 Refresh_tokenkey *只存這一次
-          localStorage.setItem('DCMATE-MEMS_BI_Refresh_TokenKey', result.Refresh_TokenKey);
-          localStorage.setItem('DCMATE-MEMS_BI_Fuctionkey', []);
+          localStorage.setItem('WeyuBI_BI_Refresh_TokenKey', result.Refresh_TokenKey);
+          localStorage.setItem('WeyuBI_BI_Fuctionkey', []);
       }
       else{
         alert('Account or password input failed.')
