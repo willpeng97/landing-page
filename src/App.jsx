@@ -104,7 +104,7 @@ function App() {
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 pt-8 animate-fadeInBottom">
               <Button text={t("learnMore")} link="https://www.weyutech.com/" />
-              <Button text={t("DEMO")} link="https://cloud.weyutech.com/DCMATE_MEMS/template/list/list.html" />
+              <Button text={t("DEMO")} link="https://cloud.weyutech.com/DCMATE_MEMS/template/list/list.html" type="DEMO"/>
               <Button text={t("Contact")} link="" />
             </div>
           </div>
