@@ -21,7 +21,7 @@ function App() {
     <div className="relative h-screen overflow-hidden bg-gradient-to-b from-blue-900 to-blue-950">
       {/* Navigation Bar */}
       <nav className="absolute top-0 left-0 right-0 z-20 p-4 flex justify-between items-center">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container max-w-full mx-auto flex justify-between items-center">
           <img
             src="./logo.png"
             alt="Company Logo"
@@ -91,7 +91,7 @@ function App() {
 
       {/* Main Content */}
       <main className="relative z-10 h-screen flex items-center">
-        <div className="container mx-auto px-4">
+        <div className="container max-w-full mx-auto px-4">
           <div className="max-w-2xl text-white space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tigh">
               {t('title')}
