@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="relative h-screen overflow-hidden bg-gradient-to-b from-blue-900 to-blue-950">
+    <div className="relative h-screen overflow-hidden bg-gradient-to-br from-blue-900 to-blue-950">
       {/* Navigation Bar */}
       <nav className="absolute top-0 left-0 right-0 z-20 p-4 flex justify-between items-center">
         <div className="container max-w-full mx-auto flex justify-between items-center">
@@ -103,7 +103,7 @@ function App() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 pt-8 animate-fadeInBottom">
-              <Button text={t("learnMore")} link="https://www.weyutech.com/" />
+              <Button text={t("learnMore")} link="https://www.weyutech.com/" type="LEARNMORE"/>
               <Button text={t("DEMO")} link="https://cloud.weyutech.com/WYBI2025/template/list/list.html" type="DEMO"/>
               <Button text={t("Contact")} link="" />
             </div>
@@ -113,6 +113,17 @@ function App() {
 
       {/* Optional: Gradient Overlay to ensure text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent pointer-events-none" />
+      {/* Footer Section */}
+      {/* <footer className="absolute bottom-0 left-0 right-0 bg-slate-800/50 text-white text-center py-3">
+        <div className="container mx-auto px-4">
+          <p className="text-sm font-medium">
+            © 2024 WeYu Technology Co., Ltd. All rights reserved.
+          </p>
+          <p className="text-xs italic">
+            Empowering innovation, connecting the future.
+          </p>
+        </div>
+      </footer> */}
     </div>
   );
 }

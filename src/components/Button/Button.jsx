@@ -61,9 +61,14 @@ const Button = ({ text, link ,type}) => {
     });
   }
   
+  // 動態樣式處理
+  const buttonStyles =
+  type === 'LEARNMORE'
+    ? 'bg-blue-400/90 hover:bg-white text-white hover:text-black'
+    : 'bg-black/50 hover:bg-white text-white hover:text-black';
 
   return (
-    <button className="font-bold group flex items-center gap-2 bg-blue-400/90 hover:bg-blue-300 text-white px-6 py-3 rounded-full transition-colors" onClick={handleClick}>
+    <button className={`font-bold group flex items-center gap-2 px-6 py-3 rounded-full transition-colors duration-300 ${buttonStyles}`} onClick={handleClick}>
         {text}
         <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
     </button>
